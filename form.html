@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <div id="Booking" class="max-w-4xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-12">
+    <h2 class="text-2xl font-bold text-center text-gray-700 mb-6">Book Your Travel</h2>
+    
+    <form action="#" method="POST" class="space-y-6">
+      <!-- Destination -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <label for="destination" class="block text-sm font-medium text-gray-700">Destination</label>
+          <input type="text" id="destination" name="destination" placeholder="Enter destination" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+        </div>
+
+        <!-- Date -->
+        <div>
+          <label for="travel-date" class="block text-sm font-medium text-gray-700">Travel Date</label>
+          <input type="date" id="travel-date" name="travel_date" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+        </div>
+      </div>
+
+      <!-- Passenger Details -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <label for="adults" class="block text-sm font-medium text-gray-700">Adults</label>
+          <input type="number" id="adults" name="adults" min="1" value="1" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+        </div>
+        
+        <div>
+          <label for="children" class="block text-sm font-medium text-gray-700">Children</label>
+          <input type="number" id="children" name="children" min="0" value="0" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+        </div>
+      </div>
+
+      <!-- Flight Class -->
+      <div>
+        <label for="flight-class" class="block text-sm font-medium text-gray-700">Flight Class</label>
+        <select id="flight-class" name="flight_class" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first-class">First Class</option>
+        </select>
+      </div>
+
+      <!-- Additional Requests -->
+      <div>
+        <label for="requests" class="block text-sm font-medium text-gray-700">Special Requests</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Any special requests or preferences?" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm"></textarea>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" class="text mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="w-full sm:w-auto bg-indigo-600 text-white px-6 py-3 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+          Book Now
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
